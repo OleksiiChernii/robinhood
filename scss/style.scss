@@ -330,7 +330,7 @@ img {
 .products {
   padding: 90px 120px 60px 120px;
 
-  background-image: url('../images/products.png');
+  background-image: url("../images/products.png");
   background-repeat: no-repeat;
   background-size: 585px 585px;
   background-position: top 84px right 100px;
@@ -418,5 +418,126 @@ img {
 
   &__icon {
     fill: currentColor;
+  }
+}
+
+.footer {
+  background-color: #000;
+  padding: 50px 120px;
+  color: #fff;
+
+  &__feedback{
+    padding-bottom: 22px;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    border-bottom: 2px solid #79858B;
+  }
+
+  .thumb{
+    width: 125px;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .subscrib {
+    width: 500px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &__description {
+      color: #79858b;
+      margin-bottom: 10px;
+    }
+
+    &__input{
+      background-color: #1E2124;
+      border-radius: 32px;
+      padding: 12px 18px;
+
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 22px;
+    }
+
+    &__email{
+      width: 100%;
+      background-color: inherit;
+      color: #fff;
+      border: none;
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    &__button{
+      @include button(#00C805, black);
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+
+  &__discloures{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+
+    color: #79858b;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__icon{
+    fill: currentColor;
+  }
+
+  &__rights{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 26px;
+
+    padding: 36px 0;
+
+    .footer__link{
+      color: #00c805;
+      font-size: 14px;
+    }
   }
 }
